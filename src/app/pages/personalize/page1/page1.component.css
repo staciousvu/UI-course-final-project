@@ -1,0 +1,17 @@
+/* logo */
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #ff6600, #ffcc00);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.logo a span {
+    color: #007bff; 
+}

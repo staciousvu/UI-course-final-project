@@ -1,0 +1,60 @@
+<section class="pt-5 pb-5">
+    <div class="container" style="max-width: 75%; padding-left: 20px; padding-right: 20px;">
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <h1 class="fw-bold mb-4">What to learn next</h1>
+                    <h2 class="h4 fw-semibold mb-4">{{title}}</h2>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <a class="btn btn-primary mb-3 me-2" href="#{{difCarousel}}" role="button" data-bs-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3" href="#{{difCarousel}}" role="button" data-bs-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <div id="{{difCarousel}}" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item" *ngFor="let group of groupedCourses;let i = index" [ngClass]="{ 'active': i === 0 }">
+                            <div class="row">
+                                <div class="col-md-2 mb-3 flex-grow-1" *ngFor="let course of group">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture"
+                                            class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top"
+                                                alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">{{course.name}}</h5>
+                                                <p class="card-text text-muted fs-7">{{course.authorName}}</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning">{{course.averageRating}}</span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i
+                                                            class="fas fa-star-half-alt"></i></span>
+                                                </div>
+                                                <span class="text-muted fs-7">({{course.reviewCount}} đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-dark me-2">₫{{course.price}}</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫{{course.price+1000000}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

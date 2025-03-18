@@ -1,0 +1,705 @@
+<app-navbar></app-navbar>
+<!-- <hr> -->
+<!-- <app-category-bar></app-category-bar> -->
+<!-- new -->
+<div class="container" style="max-width: 80%; padding-left: 20px; padding-right: 20px;">
+    <div class="d-flex align-items-center p-4">
+        <img src="assets/avatar.jpg" alt="User Avatar" class="rounded-circle" width="48" height="48">
+        <div class="ms-3">
+            <h1 class="h5 fw-bold text-dark">Welcome back, Staciousvu</h1>
+            <a href="#" class="text-primary text-decoration-underline" routerLink="/personalize/field">Add occupation and interests</a>
+        </div>
+    </div>
+</div>
+<div class="banner-container" style="max-width: 80%; margin: 20px auto; text-align: center;">
+    <img src="https://img-c.udemycdn.com/notices/web_carousel_slide/image/7cf3ac87-6438-4c2f-9d7a-e7b5467d5105.png"
+        alt="Banner" style="width: 100%; border-radius: 10px;">
+</div>
+<!-- new -->
+<!-- let start learning -->
+<!-- start weekly streak -->
+<div class="container py-4" style="max-width: 80%;">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 fw-bold">Let's start learning</h1>
+        <a href="#" class="btn btn-outline-primary">My learning</a>
+
+    </div>
+
+    <!-- Course Cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <a href="course-detail.html" class="text-decoration-none">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="https://placehold.co/100x100" class="rounded me-3" alt="Course thumbnail">
+                        <div>
+                            <h6 class="fw-bold text-dark">Angular - The Complete Guide</h6>
+                            <p class="fw-bold mb-1 text-dark">11. Understanding Components</p>
+                            <p class="text-muted mb-1">Lecture • 1m left</p>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col">
+            <a href="course-detail.html" class="text-decoration-none">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="https://placehold.co/100x100" class="rounded me-3" alt="Course thumbnail">
+                        <div>
+                            <h6 class="fw-bold">Full Stack: Angular & Spring</h6>
+                            <p class="fw-bold mb-1">14. Creating Classes</p>
+                            <p class="text-muted mb-1">Lecture • 2m left</p>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="course-detail.html" class="text-decoration-none">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="https://placehold.co/100x100" class="rounded me-3" alt="Course thumbnail">
+                        <div>
+                            <h6 class="fw-bold">Spring Boot 3 & Hibernate</h6>
+                            <p class="fw-bold mb-1">Spring MVC Security - Config</p>
+                            <p class="text-muted mb-1">Lecture • 5m left</p>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Weekly Streak -->
+    <div class="card mt-5 shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Start a weekly streak</h5>
+            <p class="card-text text-muted">Let's chip away at your learning goals.</p>
+            <div class="d-flex align-items-center mt-4">
+                <div class="d-flex align-items-center me-auto">
+                    <i class="fas fa-fire text-muted me-2"></i>
+                    <div>
+                        <p class="h4 fw-bold mb-0">0</p>
+                        <p class="text-muted mb-0">weeks</p>
+                        <p class="text-muted mb-0">Current streak</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center me-3">
+                        <div class="position-relative">
+                            <div class="rounded-circle border border-4 border-secondary"
+                                style="width: 40px; height: 40px;">
+                                <div class="rounded-circle bg-success"
+                                    style="width: 24px; height: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-2">
+                            <p class="text-muted mb-0">4/30 course min</p>
+                            <p class="text-muted mb-0">2/1 visit</p>
+                            <p class="text-muted mb-0">Mar 16 - 22</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- course -->
+<!-- <div class="container py-5" style="max-width: 80%; padding-left: 20px; padding-right: 20px;">
+    <h1 class="display-4 fw-bold mb-4">What to learn next</h1>
+    <h2 class="h4 fw-semibold mb-4">Recommended for you</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-3">
+
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <a href="https://example.com/microservices-masterclass" class="text-decoration-none text-dark">
+                    <img src="assets/logo-course.jpg" class="card-img-top" alt="Microservices Masterclass Course">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6">[NEW] Master Microservices with Spring Boot and Spring Cloud</h5>
+                        <p class="card-text text-muted fs-7">Eazy Bytes, Madan Reddy</p>
+                        <div class="d-flex align-items-center mb-1">
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ms-2 text-muted fs-7">4.7</span>
+                            <span class="ms-2 text-muted fs-7">(8,766 đánh giá)</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="h5 fw-bold fs-6 text-dark me-2">₫249,000</div>
+                            <div class="text-muted text-decoration-line-through fs-7">₫1,599,000</div>
+                        </div>
+                        <span class="badge bg-success fs-7 mt-2">Bestseller</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <a href="https://example.com/dotnet-microservices" class="text-decoration-none text-dark">
+                    <img src="assets/logo-course.jpg" class="card-img-top" alt=".NET Microservices Course">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6">.NET 8 Microservices: DDD, CQRS, Vertical/Clean...</h5>
+                        <p class="card-text text-muted fs-7">Mehmet Ozkaya</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                            <div class="text-muted text-decoration-line-through fs-7">₫1,499,000</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <a href="https://example.com/microservices-architecture" class="text-decoration-none text-dark">
+                    <img src="assets/logo-course.jpg" class="card-img-top" alt="Microservices Architecture Course">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6">Microservices Architecture - The Complete Guide</h5>
+                        <p class="card-text text-muted fs-7">Memi Lavi</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                            <div class="text-muted text-decoration-line-through fs-7">₫1,299,000</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <a href="https://example.com/event-driven-microservices" class="text-decoration-none text-dark">
+                    <img src="assets/logo-course.jpg" class="card-img-top" alt="Event Driven Microservices Course">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6">Event Driven Microservices with CQRS, Saga, Event...</h5>
+                        <p class="card-text text-muted fs-7">Madan Reddy, Eazy Bytes</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star"></i></span>
+                            <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                            <div class="text-muted text-decoration-line-through fs-7">₫1,149,000</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div> -->
+
+<!-- test carousel -->
+<!-- <section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">Carousel cards title </h3>
+            </div>
+            <div class="col-6 text-right">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<!-- here update carousel done -->
+
+<section class="pt-5 pb-5">
+    <div class="container" style="max-width: 80%; padding-left: 20px; padding-right: 20px;">
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <h1 class="fw-bold mb-4">What to learn next</h1>
+                    <h2 class="h4 fw-semibold mb-4">Recommended for you</h2>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <a class="btn btn-primary mb-3 me-2" href="#carouselExampleIndicatorswhatwillyoulearn" role="button" data-bs-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3" href="#carouselExampleIndicatorswhatwillyoulearn" role="button" data-bs-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <div id="carouselExampleIndicatorswhatwillyoulearn" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture"
+                                            class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top"
+                                                alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete
+                                                    Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Lavi</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                                                    <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/dotnet-microservices" class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top" alt=".NET Microservices Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">.NET 8 Microservices: DDD, CQRS, Vertical/Clean...</h5>
+                                                <p class="card-text text-muted fs-7">Mehmet Ozkaya</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                                                    <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,499,000</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture" class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top" alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Lavi</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                                                    <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture"
+                                            class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top"
+                                                alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete
+                                                    Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Lavi</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i
+                                                            class="fas fa-star-half-alt"></i></span>
+                                                            <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture"
+                                            class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top"
+                                                alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete
+                                                    Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Lavi</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i
+                                                            class="fas fa-star-half-alt"></i></span>
+                                                            <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture"
+                                            class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top"
+                                                alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete
+                                                    Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Lavi</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i
+                                                            class="fas fa-star-half-alt"></i></span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/dotnet-microservices" class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top" alt=".NET Microservices Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">.NET 8 Microservices: DDD, CQRS, Vertical/Clean...</h5>
+                                                <p class="card-text text-muted fs-7">Mehmet Ozkaya</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                                                    <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,499,000</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture" class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top" alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Lavi</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star-half-alt"></i></span>
+                                                    <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture"
+                                            class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top"
+                                                alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete
+                                                    Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Lavi</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i
+                                                            class="fas fa-star-half-alt"></i></span>
+                                                            <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3 flex-grow-1">
+                                    <div class="card h-100 shadow-sm border-0">
+                                        <a href="https://example.com/microservices-architecture"
+                                            class="text-decoration-none text-dark">
+                                            <img src="assets/logo-course.jpg" class="card-img-top"
+                                                alt="Microservices Architecture Course">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6">Microservices Architecture - The Complete
+                                                    Guide</h5>
+                                                <p class="card-text text-muted fs-7">Memi Laviaa</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i class="fas fa-star"></i></span>
+                                                    <span class="text-warning"><i
+                                                            class="fas fa-star-half-alt"></i></span>
+                                                            <span class="ms-2 text-muted fs-7">4.7</span>
+                            
+                                                </div>
+                                                <span class="text-muted fs-7">(8,766 đánh giá)</span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="h5 fw-bold fs-6 text-danger me-2">₫249,000</div>
+                                                    <div class="text-muted text-decoration-line-through fs-7">₫1,299,000
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-course-carousel [courses]=courses title="Những khóa học nên học" difCarousel="dif1"></app-course-carousel>
+<app-course-carousel [courses]=courses title="Những khóa học cho tìm kiếm " difCarousel="dif2"></app-course-carousel>
+<app-top-pick-course></app-top-pick-course>

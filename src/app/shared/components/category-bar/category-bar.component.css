@@ -1,0 +1,36 @@
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Kiểu dáng cho mỗi mục */
+.item {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Màu chữ mặc định */
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động khi hover */
+}
+
+/* Hiệu ứng hover */
+.item:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+    color: #007bff; /* Màu chữ khi hover */
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+/* Các mục sẽ có kiểu dáng đẹp khi ở trên desktop */
+@media (min-width: 768px) {
+    .item {
+        margin: 10px;
+    }
+}
+
+/* Thêm một chút căn chỉnh cho các liên kết */
+.item:hover {
+    text-decoration: underline;
+}
