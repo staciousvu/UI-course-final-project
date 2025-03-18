@@ -1,2 +1,108 @@
 <app-week-streak></app-week-streak>
 <!-- filter -->
+<div class="container mt-4" style="max-width: 80%;">
+    <div class="row g-3 align-items-center">
+        <!-- Sort By -->
+        <div class="col-md-2">
+            <label class="form-label">Sort by</label>
+            <select class="form-select">
+                <option>Recently accessed</option>
+                <option>Recently enrolled</option>
+                <option>A-Z</option>
+                <option>Z-A</option>
+            </select>
+        </div>
+
+        <!-- Filter By -->
+        <div class="col-md-6">
+            <label class="form-label">Filter by</label>
+            <div class="row g-2">
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Category</option>
+                        <option>Technology</option>
+                        <option>Business</option>
+                        <option>Design</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Price</option>
+                        <option>Free</option>
+                        <option>Paid</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <span class="btn btn-dark">Reset</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty Space -->
+        <div class="col-md-1">
+
+        </div>
+        
+
+        <!-- Search -->
+        <div class="col-md-3">
+            <label class="form-label">Search</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <button class="btn btn-dark">Go</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- list course -->
+<div class="container mt-4" style="max-width: 80%;">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+        <div class="col" *ngFor="let course of courses">
+            <div class="card h-100 p-2">
+                <img class="card-img-top" [src]="course.image" [alt]="course.title">
+                <div class="card-body">
+                    <h5 class="card-title fs-6 fw-bold">{{ course.title }}</h5>
+                    <p class="card-text text-muted fs-7">{{ course.author }}</p>
+                    <div class="progress mb-1">
+                        <div class="progress-bar" role="progressbar" 
+                            [style.width.%]="course.progress" 
+                            [attr.aria-valuenow]="course.progress" 
+                            aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <small class="text-muted fs-7">{{ course.progress }}% complete</small>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <div class="text-warning">
+                            <i *ngFor="let star of [].constructor(5); let i = index" 
+                               [ngClass]="{'fas fa-star': i < course.rating, 'far fa-star': i >= course.rating}">
+                            </i>
+                        </div>
+                        <small class="text-muted fs-7">Leave a rating</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thêm các card khác tương tự -->
+    </div>
+</div>
+<div class="d-flex justify-content-center mt-4">
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+</div>
+   

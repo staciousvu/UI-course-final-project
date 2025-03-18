@@ -1,0 +1,6 @@
+.active-tab {
+    border-bottom: 5px solid white !important; /* Gạch chân màu trắng */
+    font-weight: bold;
+    color: white !important; /* Giữ màu chữ */
+    border-radius: 0 !important;
+}

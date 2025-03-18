@@ -1,29 +1,47 @@
 <app-header></app-header>
 <div class="container-fluid bg-dark text-white">
     <div class="container" style="max-width: 80%; padding-left: 20px; padding-right: 20px;">
-    <h1 class="display-8 fw-bold pt-2">My learning</h1>
-    <nav class="mt-4">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">All courses</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">My Lists</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Wishlist</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Certifications</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Archived</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Learning tools</a>
-            </li>
-        </ul>
-    </nav>
+        <h1 class="display-8 fw-bold pt-2">My Learning</h1>
+        <nav class="mt-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                       routerLink="all-courses" 
+                       routerLinkActive="active-tab"
+                       [routerLinkActiveOptions]="{ exact: true }">All Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                       routerLink="my-lists" 
+                       routerLinkActive="active-tab"
+                       [routerLinkActiveOptions]="{ exact: true }">My Lists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                       routerLink="wish-lists" 
+                       routerLinkActive="active-tab"
+                       [routerLinkActiveOptions]="{ exact: true }">Wishlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                       routerLink="certifications" 
+                       routerLinkActive="active-tab"
+                       [routerLinkActiveOptions]="{ exact: true }">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                       routerLink="archived" 
+                       routerLinkActive="active-tab"
+                       [routerLinkActiveOptions]="{ exact: true }">Archived</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                       routerLink="learning-tools" 
+                       routerLinkActive="active-tab"
+                       [routerLinkActiveOptions]="{ exact: true }">Learning Tools</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </div>
 
