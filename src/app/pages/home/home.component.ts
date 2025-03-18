@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { CourseCarouselComponent } from '../../shared/components/course-carousel/course-carousel.component';
 import { RouterLink } from '@angular/router';
 import { TopPickCourseComponent } from '../../shared/components/top-pick-course/top-pick-course.component';
+import { WeekStreakComponent } from '../../shared/components/my-courses/week-streak/week-streak.component';
 
 declare var Swiper: any;
 
@@ -12,7 +13,7 @@ declare var Swiper: any;
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent,CommonModule,CourseCarouselComponent,RouterLink,TopPickCourseComponent],
+  imports: [NavbarComponent,CommonModule,CourseCarouselComponent,RouterLink,TopPickCourseComponent,WeekStreakComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
